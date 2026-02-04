@@ -1,0 +1,120 @@
+############################################
+# Data science / ML .gitignore (sample)
+############################################
+
+# --- Data & large files (customize to your repo structure) ---
+data/
+!data/.gitkeep
+
+outputs/
+!outputs/.gitkeep
+
+reports/
+!reports/.gitkeep
+
+figures/
+!figures/.gitkeep
+
+# Common data formats (comment out any you DO want in git)
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.jsonl
+*.xlsx
+*.sav
+*.dta
+
+# Serialized objects / caches
+*.pkl
+*.pickle
+*.joblib
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+
+# Logs
+*.log
+
+
+# --- Models & experiment tracking ---
+models/
+!models/.gitkeep
+
+checkpoints/
+!checkpoints/.gitkeep
+
+mlruns/          # MLflow
+wandb/           # Weights & Biases
+lightning_logs/  # PyTorch Lightning
+runs/            # TensorBoard / generic runs
+
+# Model/checkpoint formats
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+*.nb.html
+
+
+# --- Python caches / test / typechecking ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# --- Environments / dependency managers ---
+.venv/
+venv/
+env/
+ENV/
+.conda/
+pip-wheel-metadata/
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+
+# --- IDE / OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# --- Secrets / local config (IMPORTANT) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.yaml
+secrets*.yml
+config.local.*
