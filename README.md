@@ -26,5 +26,35 @@ Assess whether the findings adequately address the business question and support
 ### 6. Deployment
 Present insights through visualizations and a non-technical presentation, and provide clear recommendations that stakeholders can use to guide decision making.
 
+## Folder Structure
+
+The repository is organized following the CRISP-DM framework to keep the project clear and easy to navigate.
+
+CRISP-DM/
+│
+├── data/
+│ └── raw and processed folders - datasets used for the analysis
+│
+├── notebooks/
+│ └── Jupyter notebooks for data understanding, preparation, analysis, and visualization
+│
+├── tableau/
+│ └── Tableau workbooks and exported visuals used in the presentation
+│
+├── .gitignore
+│ └── Specifies files and folders excluded from version control
+│
+└── README.md
+└── Project overview, structure, and documentation
+
 ## Project Goal
 To provide data driven insights that help a new movie studio decide which types of films to prioritize for production.
+
+## Authors
+
+**Group 3**
+- Ainsley Nyambura  
+- Lorenah Mbogo  
+- Angela Mutiaga  
+- Dennis Kamuri  
+- Stephen Bwanamkubwa  
