@@ -29,7 +29,7 @@ Present insights through visualizations and a non-technical presentation, and pr
 ## Folder Structure
 
 The repository is organized following the CRISP-DM framework to keep the project clear and easy to navigate.
-
+``` bash
 CRISP-DM/
 │
 ├── data/
@@ -46,7 +46,7 @@ CRISP-DM/
 │
 └── README.md
 └── Project overview, structure, and documentation
-
+```
 ## Project Goal
 To provide data driven insights that help a new movie studio decide which types of films to prioritize for production.
 
