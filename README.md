@@ -1,101 +1,211 @@
-# CRISP-DM
-## Movie Studio Data Science Project
+# 🎬 CRISP-DM Movie Studio Data Science Project
 
----
+## Film Investment & ROI Strategy Analysis
 
-## Project Overview
+------------------------------------------------------------------------
 
-This project applies the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework to support business decision-making for a newly established movie studio. The studio aims to enter the competitive film industry but lacks prior experience in identifying what types of movies are most likely to succeed financially.
+## 📌 Project Overview
 
-Using historical movie performance data from multiple sources, this analysis explores trends in box office revenue, audience reception, and movie characteristics. The insights generated are translated into clear, actionable recommendations to guide future movie production decisions.
+This project applies the **CRISP-DM (Cross-Industry Standard Process for
+Data Mining)** framework to support strategic decision-making for a
+newly established movie studio.
 
----
+The studio aims to enter the competitive film industry but faces
+financial risk due to limited production experience. Using historical
+data on production budgets, box office performance, and audience
+reception, this analysis identifies the characteristics of financially
+successful films.
 
-## Business Problem
+The final deliverables include: - A comprehensive Jupyter Notebook
+analysis - A Tableau dashboard for stakeholder exploration - Strategic
+investment recommendations
 
-Major entertainment companies are increasingly investing in original film content. To remain competitive, the company plans to launch its own movie studio. However, without prior experience in film production, the studio faces significant financial risk.
+------------------------------------------------------------------------
 
-The central business question addressed in this project is:
+# 🎯 Business Problem
 
-**How can historical movie data be used to identify the characteristics of successful films, and how can these insights inform strategic production decisions for a new movie studio?**
+The company plans to launch a new movie studio and must decide:
 
----
+-   Which **genres** generate the highest ROI?
+-   What **budget levels** are most capital-efficient?
+-   How important are **international markets**?
+-   Do **audience ratings and popularity** predict commercial success?
 
-## Project Objective
+> **How can historical movie data guide strategic film investment
+> decisions while minimizing financial risk?**
 
-The objective of this project is to provide data-driven insights that help a new movie studio decide which types of films to prioritize for production in order to maximize box office success while managing financial risk.
+------------------------------------------------------------------------
 
----
+# 🧮 Key Metric: Return on Investment (ROI)
 
-## CRISP-DM Framework
+ROI is used to measure capital efficiency instead of focusing only on
+total revenue.
 
-### 1. Business Understanding
-Define the business problem and key objectives. In this project, the focus is on understanding what drives box office success and how those drivers can be used to guide production strategy.
+ROI = (Worldwide Gross − Production Budget) / Production Budget
 
-### 2. Data Understanding
-Explore and describe the datasets used in the analysis, including their sources, structure, time coverage, and limitations. This phase evaluates how well the data supports the business question.
+Interpretation: - ROI = 0 → Break-even\
+- ROI = 1 → 100% return\
+- ROI \> 1 → Highly profitable\
+- ROI \< 0 → Financial loss
 
-### 3. Data Preparation
-Clean and prepare the data for analysis. This includes handling missing values, standardizing variables, and merging datasets where appropriate.
+------------------------------------------------------------------------
 
-### 4. Data Analysis
-Analyze the prepared data to identify patterns and relationships between movie characteristics, audience reception, and box office performance.
+# 🔄 CRISP-DM Framework Application
 
-### 5. Evaluation
-Evaluate whether the analysis sufficiently addresses the business problem and supports actionable recommendations.
+## 1️⃣ Business Understanding
 
-### 6. Deployment
-Present insights using visualizations and a non-technical presentation, and provide clear recommendations that stakeholders can use for decision-making.
+Defined the financial risk facing a new studio and identified ROI as the
+core performance metric.
 
----
+## 2️⃣ Data Understanding
 
-## Data Sources
+Explored datasets to evaluate: - Revenue trends - Budget distribution -
+Ratings behavior - Genre frequency - Studio dominance
 
-The analysis uses the following datasets:
+## 3️⃣ Data Preparation
 
-- **Box Office Mojo**: Box office revenue data, including domestic and international gross.
-- **TMDB (The Movie Database)**: Movie metadata such as popularity, audience ratings, and vote counts.
-- **The Numbers**: Production budgets and revenue figures.
-- **Movie Info**: Additional movie metadata.
-- **Movie Reviews**: Audience and critic review data.
+-   Cleaned currency values
+-   Converted gross and budget columns to numeric
+-   Standardized movie titles
+-   Extracted release year
+-   Merged datasets using title and year
+-   Engineered ROI feature
 
----
+## 4️⃣ Data Analysis
 
-## Folder Structure
+Performed: - Domestic vs foreign revenue comparison\
+- Revenue trends over time\
+- Studio performance comparison\
+- Ratings distribution and vote behavior\
+- Correlation analysis (Pearson & Spearman)\
+- Budget vs ROI analysis\
+- ROI by genre (minimum sample threshold applied)\
+- Ratings vs worldwide gross analysis
 
-The repository is organized according to the CRISP-DM framework:
+## 5️⃣ Evaluation
 
-```bash
+Assessed: - Whether ratings predict revenue\
+- Whether larger budgets guarantee higher ROI\
+- Which genres are most capital-efficient\
+- The role of international markets
+
+## 6️⃣ Deployment
+
+Delivered: - A consolidated final notebook\
+- Clear visualizations tied to business questions\
+- A Tableau dashboard for interactive stakeholder exploration\
+- Strategic investment recommendations
+
+------------------------------------------------------------------------
+
+# 📊 Data Sources
+
+The final analysis uses cleaned datasets from:
+
+### Box Office Mojo (BOM)
+
+-   Domestic gross revenue\
+-   Foreign gross revenue\
+-   Studio\
+-   Release year
+
+### The Numbers
+
+-   Production budget\
+-   Release date
+
+### IMDb
+
+-   Genres\
+-   Average rating\
+-   Number of votes
+
+Datasets were cleaned and merged using `title_clean` and release year.
+
+------------------------------------------------------------------------
+
+# 📈 Key Findings
+
+-   🌍 International markets generate significantly more revenue than
+    domestic markets.
+-   💰 ROI varies widely by genre.
+-   🎥 Mid-budget films often outperform large blockbusters in ROI.
+-   ⭐ High IMDb ratings do not strongly predict high revenue.
+-   📊 Budget size alone does not guarantee profitability.
+-   📅 Release timing influences revenue performance.
+
+------------------------------------------------------------------------
+
+# 💡 Strategic Recommendations
+
+The studio should:
+
+-   Prioritize genres with consistently high average ROI.
+-   Focus on international market appeal and distribution strategy.
+-   Invest in capital-efficient mid-budget films.
+-   Treat IMDb ratings as a quality indicator, not a revenue predictor.
+-   Optimize release timing around high-revenue windows.
+
+------------------------------------------------------------------------
+
+# 📊 Tableau Dashboard
+
+The Tableau dashboard (located in the `/tableau/` folder) provides
+interactive exploration of:
+
+-   ROI by genre\
+-   Budget vs revenue relationships\
+-   Studio performance\
+-   Revenue trends
+
+------------------------------------------------------------------------
+
+# Repository Structure
+```
 CRISP-DM/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── im.db
-│   │   ├── bom.movie_gross.csv
-│   │   ├── tn.movie_budgets.csv
-│   │   ├── tmdb.movies.csv
-│   │   ├── movie_info.csv
-│   │   └── movie_reviews.csv
-│   │
 │   └── processed/
 │
 ├── notebooks/
-│   └── 01_data_understanding_person1.ipynb
+│   └── film_investment_roi_analysis.ipynb
 │
 ├── tableau/
 │
+├── visuals/
+│
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+------------------------------------------------------------------------
 
-## Authors
+# ⚙️ Setup Instructions
 
-Ainsley Nyambura
+1.  Clone the repository\
+    git clone `https://github.com/Skylar-Lorena/CRISP-DM`{=html}
 
-Lorenah Mbogo
+2.  Create a virtual environment (recommended)\
+    python -m venv venv
 
-Angela Mutiaga
+3.  Activate environment\
+    Windows: venv`\Scripts`{=tex}`\activate  `{=tex} Mac/Linux: source
+    venv/bin/activate
 
-Dennis Kamuri
+4.  Install dependencies\
+    pip install -r requirements.txt
 
+5.  Run Jupyter Notebook\
+    jupyter notebook\
+    Open: film_investment_roi_analysis.ipynb
+
+------------------------------------------------------------------------
+
+# 👥 Authors
+
+Ainsley Nyambura\
+Lorenah Mbogo\
+Angela Mutiaga\
+Dennis Kamuri\
 Stephen Bwanamkubwa
