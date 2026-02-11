@@ -22,7 +22,7 @@ investment recommendations
 
 ------------------------------------------------------------------------
 
-# 🎯 Business Problem
+# Business Problem
 
 The company plans to launch a new movie studio and must decide:
 
@@ -36,7 +36,7 @@ The company plans to launch a new movie studio and must decide:
 
 ------------------------------------------------------------------------
 
-# 🧮 Key Metric: Return on Investment (ROI)
+# Key Metric: Return on Investment (ROI)
 
 ROI is used to measure capital efficiency instead of focusing only on
 total revenue.
@@ -50,7 +50,7 @@ Interpretation: - ROI = 0 → Break-even\
 
 ------------------------------------------------------------------------
 
-# 🔄 CRISP-DM Framework Application
+# CRISP-DM Framework Application
 
 ## 1️⃣ Business Understanding
 
@@ -126,17 +126,17 @@ Datasets were cleaned and merged using `title_clean` and release year.
 
 # 📈 Key Findings
 
--   🌍 International markets generate significantly more revenue than
+-   International markets generate significantly more revenue than
     domestic markets.
--   💰 ROI varies widely by genre.
--   🎥 Mid-budget films often outperform large blockbusters in ROI.
--   ⭐ High IMDb ratings do not strongly predict high revenue.
--   📊 Budget size alone does not guarantee profitability.
--   📅 Release timing influences revenue performance.
+-   ROI varies widely by genre.
+-   Mid-budget films often outperform large blockbusters in ROI.
+-   High IMDb ratings do not strongly predict high revenue.
+-   Budget size alone does not guarantee profitability.
+-   Release timing influences revenue performance.
 
 ------------------------------------------------------------------------
 
-# 💡 Strategic Recommendations
+# Strategic Recommendations
 
 The studio should:
 
@@ -184,17 +184,17 @@ CRISP-DM/
 # ⚙️ Setup Instructions
 
 1.  Clone the repository\
-    git clone `<your-repository-url>`{=html}
+    git clone `https://github.com/Skylar-Lorena/CRISP-DM`
 
 2.  Create a virtual environment (recommended)\
-    python -m venv venv
+   ``` python -m venv venv```
 
 3.  Activate environment\
-    Windows: venv`\Scripts`{=tex}`\activate  `{=tex} Mac/Linux: source
-    venv/bin/activate
+    Windows: venv`\Scripts`{=tex}`\activate  `{=tex} Mac/Linux: ```source
+    venv/bin/activate```
 
 4.  Install dependencies\
-    pip install -r requirements.txt
+    ```pip install -r requirements.txt```
 
 5.  Run Jupyter Notebook\
     jupyter notebook\
