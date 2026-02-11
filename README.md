@@ -206,6 +206,6 @@ CRISP-DM/
 
 Ainsley Nyambura\
 Lorenah Mbogo\
-Angela Mutiaga\
+Angela Mutiga\
 Dennis Kamuri\
 Stephen Bwanamkubwa
